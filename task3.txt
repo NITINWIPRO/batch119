@@ -7,3 +7,4 @@
 5.  Write a program to display numbers from -10 to -1.
 6.  Calculate the cube of every number upto 20.
 7.  Write a program to find the factorial of any given number. 
+8.  Write a program to create a calculator and use while loop so the user can use it again without running the program. 
