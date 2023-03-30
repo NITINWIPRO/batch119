@@ -1,0 +1,19 @@
+#Project
+"""
+theatre/stadium
+total seats = 150
+normal seats = 130
+recliner = 20
+normal_seat_price = 250
+recliner_price = 380
+
+seats = ask user
+No_seats = ask user
+
+total = xyz
+
+130 - 3
+127 seats available
+recliner = 0
+
+"""
