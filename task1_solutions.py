@@ -19,12 +19,23 @@ ph_no = int(input("enter phone number: "))
 
 
 3. write a program to find the cube of 36. 
+    print(36**3)
 4. Apply all the types of Arithmetic Operators on the following Variables:
     a = 40
     b = 5
-    
+    print(a+b)
+    print(a-b)
+    print(a*b)
+    print(a/b)
+    print(a**b)
+    print(a%b)
+    print(a//b)
 5. x = 56
    y = "44"
    
    write a program to display sum of both the variables. 
    and the output of the program should be 100.
+   x = 56
+   y = "44"
+   y = int(y)
+   print(x+y)
