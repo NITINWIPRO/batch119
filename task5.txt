@@ -1,0 +1,15 @@
+grocery = []
+while True:
+    choice = int(input("""press 1 to add
+    press 2 to remove
+    press 3 to display list: """))
+
+    if choice == 1:
+        item = input("enter item: ")
+        grocery.append(item)
+        print(grocery)
+
+    elif choice == 2:
+        item = input("enter item: ")
+        grocery.remove(item)
+        print(grocery)
