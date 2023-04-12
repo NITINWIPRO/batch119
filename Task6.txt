@@ -1,6 +1,6 @@
-1. Write a python program to interchane first and last element in a list.
+1. Write a python program to interchange first and last element in a list.
 2. Write a Python program to reverse a List.
-3. Count orrurance of an element in a list with using count function.
+3. Count orrurance of an element in a list without using count function.
 4. Write a program to find the second lasgest number in a list.
 5. L = [2,5,-5,8,-67,98,-45,-2]
    Write a program to add positive and negative numbers to a separate list.
