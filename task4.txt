@@ -1,4 +1,39 @@
 1. Find the length of a string without using len() function. 
+name = "nitin kumar"
+count = 0
+for char in name:
+    count += 1
+print("Length of string:",count)
+
 2. Write a program to convert half of the string uppercase and rest half of string in lower case.
+name = ("hello")
+
+for i in range(len(string)):
+    if i < len(string) // 2:
+        name += string[i].upper()
+    else:
+        name += string[i].lower()
+
+print("Original string:", string)
+print("New string:", name)
+
 3. count the number of any character occuring in the string without using count function.
+name = input("Enter a name: ")
+frute = input("Enter a character: ")
+count = 0
+
+for i in name:
+    if i == frute:
+        count += 1
+
+print("The character '{}' appears {} times in the string.".format(frute, count))
+
 4. Write a program to reverse any given string. 
+string = input("Enter a string: ")
+reversedString = ""
+
+for i in range(len(string)-1, -1, -1):
+    reversedString += string[i]
+
+print("Original string:", string)
+print("Reversed string:", reversed_string)
