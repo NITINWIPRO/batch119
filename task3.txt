@@ -1,10 +1,56 @@
-1.	Write a Python program to convert the distance (in feet) to inches, yards, and miles.
-2.	Write a Python program to check whether a number is divisible by another number. Accept two integer’s values form the user.
-3.	Write a Python program to check whether an alphabet is a vowel or consonant.
-4.    Write a program to print multiplication table of any given number in the format given below:
+1. Write a Python program to convert the distance (in feet) to inches, yards, and miles.
+           
+distanceFeet = float(input("Enter the distance in feet: "))
+distanceInches = distance_feet * 12
+distanceYards = distance_feet / 3
+distanceMiles = distance_feet / 5280
+print(f"The distance in inches is (distanceInches)")
+print(f"The distance in yards is (distanceYards)")
+print(f"The distance in miles is (distanceMiles)")
+
+2. Write a Python program to check whether a number is divisible by another number. Accept two integer’s values form the user.
+num1 = int(input("Please enter the first number: "))
+num2 = int(input("Please enter the second number: "))
+if num1 % num2 == 0:
+    print(f"(num1) is divisible by (num2).")
+else:
+    print(f"(num1) is not divisible by (num2).")
+
+3. Write a Python program to check whether an alphabet is a vowel or consonant.
+
+alphabet = input("Please enter an alphabet: ")
+if alphabet in ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']:
+    print(f"(alphabet) is a vowel.")
+else:
+    print(f"(alphabet) is a consonant.")
+
+
+
+4. Write a program to print multiplication table of any given number in the format given below:
             12 x 1 = 12
             12 x 2 = 24
-5.    Write a program to display numbers from -10 to -1.   
+num = int(input("Please enter a number: "))
+for i in range(1, 11):
+    result = num * i
+    print(f"{num} x {i} = {result}")
+    
+5.    Write a program to display numbers from -10 to -1.  
+      for i in range(-10, 0):
+
 6.    Calculate the cube of every number upto 20.
+
+for i in range(1, 21):
+    cube = i ** 3
+    print(f"The cube of {i} is {cube}")
+
 7.    Write a program to find the factorial of any given number. 
+   num = int(input("Enter a number: "))
+factorial = 1
+for i in range(1, num + 1):
+    factorial *= i
+print(f"The factorial of {num} is {factorial}")
+
 8.    Write a program to create a calculator and use while loop so the user can use it again without running the program. 
+
+
+
