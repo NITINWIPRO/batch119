@@ -1,19 +1,74 @@
-#Project
-"""
-theatre/stadium
-total seats = 150
-normal seats = 130
-recliner = 20
-normal_seat_price = 250
-recliner_price = 380
+Normal_seats = 130
+Recliners = 20
+while True:
+    from datetime import datetime
+    now = datetime.now()
+    current_time1 = now.strftime("%H:%M:%S")
+    current_time = now.strftime("%H")
+    current_time = int(current_time)
+    total = 0
+    Name = input("enter your name:")
+    print(f"Welcome To Hogwarts Theater {Name}")
+    print(f"it's {current_time1}")
+    if current_time in range(0, 12):
+        print("Good morning")
+    elif current_time in range(12, 16):
+        print("Good afternoon")
+    elif current_time in range(16, 23):
+        print("Good Evening")
 
-seats = ask user
-No_seats = ask user
+    while True:
+        Seat_choice = input('If you want Recliners 350rs press 1, For Normal_seats 250rs press 2: ')
+        if Normal_seats == 0 and Recliners == 0:
+            print(f"oops, Sorry {Name} houseful")
+            print("Final Total:", total)
+            break
 
-total = xyz
+        elif Seat_choice == '1':
+            if Recliners > 0:
+                print(f'You have chosen Recliners, {Recliners} Recliners left')
+                seats = int(input("How many seats you want:"))
+                Recliners -= seats
+                total = total + seats * 350
+                x = input('Need anything else: (press 1 for any other seat, 2 for Snacks,say N if done):')
+                if x != "1" and x != "2":
+                    print("ok nothing added more, Final Total:", total)
+                    break
+                elif x == "2":
+                    print("Yayy!!, Meal added")
+                    total = total + 150
+                    print("Final Total including meal:", total)
+                    break
+                elif x == "1":
+                    continue
+            else:
+                print("No more recliners")
+                print("Final Total:", total)
+                continue
+        elif Seat_choice == '2':
+            if Normal_seats > 0:
+                print(f'You have chosen Normal_seats, {Normal_seats} Normal_seats left')
+                seats = int(input("How many seats you want:"))
+                Normal_seats -= seats
+                total = total + seats * 150
+                x = input('Need anything else: (press 1 for any other seat, 2 for Snacks,say N if done):')
+                if x != "1" and x != "2":
+                    print("ok nothing added more, Final Total:", total)
+                    break
+                elif x == "2":
+                    print("Yayy!!, Meal added")
+                    total = total + 150
+                    print("Final Total including meal:", total)
+                elif x == "1":
+                    continue
 
-130 - 3
-127 seats available
-recliner = 0
+            elif Normal_seats <= 0:
+                print("No more Normal_seats")
+                print("Final Total:", total)
+                continue
 
-"""
+        else:
+            print(f"Wrong choice dear {Name},Try again between 1&2")
+            continue
+
+
